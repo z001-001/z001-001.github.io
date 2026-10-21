@@ -1,57 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio of 石川 浩和 ｜ISHIKAWA Hirokazu</title>
-    <meta name="keywords" content="石川浩和,java,ruby on rails,bootstrap" />
-    <meta name="description" content="ITエンジニア石川浩和の紹介ページです。" />
-    <!-- BootstrapのCSS読み込み -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- jQuery読み込み -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <div id="logo">
-        <img src="z001-001-icon-v1.png" alt="" />
-        <h1>石川 浩和 | ISHIKAWA Hirokazu</h1>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Portfolio of 石川 浩和 ｜ISHIKAWA Hirokazu</title>
+  <meta name="keywords" content="石川浩和,Java,C#,Rust" >
+  <meta name="description" content="ITエンジニア石川浩和の紹介ページです。" >
+  <link rel="icon" href="z001-001-icon-v1.png" type="image/png">
+
+  <!-- Blades CSS v3 CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@anyblades/blades@3/css/blades.min.css">
+  <link rel="stylesheet" href="style.css" >
+
+  <style>
+  </style>
+</head>
+<body>
+
+  <!-- 1. ページ共通ヘッダー -->
+  <header class="container">
+    <nav aria-label="メインナビゲーション">
+      <ul>
+        <li>
+          <strong>
+            <a href="/" aria-label="ポートフォリオのトップページ" class="contrast"><i><img src="z001-001-icon-v1.png" alt=""></i> 石川 浩和</a>
+          </strong>
+        </li>
+        <li><a href="/" class="contrast"><strong></strong></a></li>
+      </ul>
+      <ul>
+        <li><a href="#about" class="secondary">About</a></li>
+        <li><a href="#projects" class="secondary">Projects</a></li>
+        <li><a href="#links" class="secondary">Links</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 2. 主要メインコンテンツ -->
+  <main class="container">
+
+    <!-- 自己紹介 -->
+    <section id="about">
+      <hgroup>
+        <h1>石川 浩和</h1>
+        <p>ISHIKAWA Hirokazu ／ ITエンジニア ／ 山形県酒田市在住</p>
+      </hgroup>
+      <p>25年ほど、Java / C# を中心に業務システムの開発に携わっています。個人開発では、Rustを使ったソフトウェア制作に取り組んでいます。</p>
+    </section>
+
+    <!-- 作成物 (Projects) -->
+    <section id="projects">
+      <h2 id="projects-heading">Projects</h2>
+      <div class="grid">
+        <article>
+          <header>
+            <h3><a href="https://github.com/z001-001/keybd-sleep" target="_blank" rel="noopener noreferrer">keybd-sleep</a></h3>
+            <small class="faded">Windows Utility Application</small>
+          </header>
+          <p>PCをスリープ状態にする Windows アプリです。</p>
+          <footer>
+            <small><a href="https://github.com/z001-001/keybd-sleep" target="_blank" rel="noopener noreferrer" class="secondary">GitHub でソースを見る <span aria-hidden="true">↗</span></a></small>
+          </footer>
+        </article>
       </div>
-    </header>
-    <div class="container">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h2 class="panel-title" id="panel-title">About</h2>
-        </div>
-        <div class="panel-body">
-          <h3>自己紹介</h3>
-          <p>石川 浩和（ITエンジニア）</p>
-          <p>山形県酒田市在住。</p>
-          <p>25年程、Java/C#を中心にプログラミングの仕事をしています。</p>
-          <p>個人では、Rustで作成を行っています。</p>
-          <h3>作成物</h3>
-          <ul>
-            <li>
-              <a href="https://github.com/z001-001/keybd-sleep" target="_blank">keybd-sleep</a> 
-              <dl>
-                <dd>PCをスリープ状態にする Windows アプリです。</dd>
-              </dl>
-            </li>
-          </ul>
-          <h3>リンク</h3>
-          <ul>
-            <li><a href="https://github.com/z001-001/" target="_blank">GitHub (自分の公開ページ)</a></li>
-            <li><a href="https://zenn.dev/z001_001" target="_blank">Zenn (自分の執筆記事)</a></li>
-          </ul>
-        </div>
-      </div>
-      <footer class="footer">
-        <p>&copy; 2026 ISHIKAWA Hirokazu.</p>
-      </footer>
-    </div>
-  </body>
+    </section>
+
+    <!-- リンク (Links) -->
+    <section id="links">
+      <h2>Links</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/z001-001/" target="_blank" rel="noopener noreferrer"><i><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" alt=""></i> GitHub</a>
+          <small class="faded">— 自分の公開ページ</small>
+        </li>
+        <li>
+          <a href="https://zenn.dev/z001_001" target="_blank" rel="noopener noreferrer"><i><img src="https://www.google.com/s2/favicons?domain=zenn.dev&amp;sz=64" alt=""></i> Zenn</a>
+          <small class="faded">— 自分の執筆記事</small>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- 3. ページ共通フッター -->
+  <footer class="container">
+    <p><small class="faded">&copy; 2026 ISHIKAWA Hirokazu.</small></p>
+  </footer>
+
+</body>
 </html>
